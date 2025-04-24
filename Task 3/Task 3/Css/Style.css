@@ -1,0 +1,80 @@
+#header{
+    background-image: url(/images/drew-coffman-1872.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+}
+#header .header-content{
+    text-align: center;
+    color: aliceblue;
+    padding-top: 200px;
+
+}
+#header .header-content span{
+    font-family:initial;
+    font-size: 20px;
+}
+#header .header-content h1{
+    font-size: 70px;
+    font-family:initial;
+    margin: 20px 0 ;
+
+}
+#header .header-content p{
+    font-size: 25px;
+    margin-bottom: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+#header .header-content button{
+    padding: 15px 25px;
+    border-radius: 5px;
+    color: aliceblue;
+    font-size: medium;
+    
+}
+
+#header .button-2{
+    background-color: transparent;
+    border-color: aliceblue;
+}
+
+#header .button-1{
+    background-color: rgb(142,119,84);
+    
+}
+
+#info {
+    background-color: white;
+    color: #333;
+    padding: 20px;
+    margin: 0 200px 0 200px;
+
+  }
+  
+  .info-details img {
+    float: left;
+    width: 55%;
+    margin-top: 70px;
+    margin-right: 50px;
+    margin-bottom: 10px;
+
+  }
+  
+  .info-details {
+    overflow: hidden; 
+  }
+  
+  .info-details h2 {
+    margin-top: 120px;
+    font-family:serif;
+    font-size:30px;
+  }
+
+  .info-details p {
+    display: block;
+    font-size: 20px;
+    font-family: serif;
+    margin: 30px;
+  }
