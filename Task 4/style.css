@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+}
+#header {
+    background-image: url(/image/hero\ img.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    position: relative; 
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+}
+
+#navbar, #header-content {
+    position: relative; 
+    z-index: 1; 
+
+}
+#header-content {
+    text-align: center;
+    padding-top: 230px;
+    font-family: "Source Code Pro", monospace;
+    font-weight: 900;
+
+    
+}
+#header-content span {
+    color: rgb(255, 255, 255); 
+    font-size: 25px;
+}
+
+#header-content p {
+    color: rgb(255,48,91); 
+    text-align: center;
+    font-size: 70px;
+    font-weight: bolder;
+}
+#clear-div{
+    clear: both;
+}
+#contaniner #logo{
+    float: left;
+    color:rgb(255,48,91) ;
+    font-size: 25px;
+    font-family: "Source Code Pro", monospace;
+    font-weight: 900;
+    padding-top: 10px;
+}
+#contaniner #menu-link{
+    float: right;
+}
+#header #menu-link li{
+    display: inline-block;
+    padding: 0 10px;
+    font-size: 16px;
+    margin-top: 20px;
+  
+}
+#header #menu-link li .active{
+    color: rgb(255,48,91) ;
+}
+#header #menu-link a{
+    color: rgb(255, 255, 255);
+    text-decoration:none ;
+    padding-right: 5px;
+}
+#contaniner {
+    padding-right: 80px;
+    padding-left: 80px;
+    margin-left: 80px;
+    margin-right: 80px;
+}
+#about{
+    overflow: hidden;
+    padding: 100px 190px 100px 190px ;
+}
+#about #imag{
+    float: left;
+    width: 40%;
+    position: relative;
+}
+#about #imag #fram-image{
+    position: absolute;
+    top: -20px;
+    left: -30px; /* Push it to the right */
+    width: 78%;
+    height: 90%;
+    border: 8px solid rgba(43, 43, 43, 0.74);
+    z-index: -1;
+    border-radius: 5px;
+}
+#about #about-container{
+    float: right;
+    width: 58%;
+
+}
+#about #head-about p {
+    padding: 20px 0;
+    font-size: 20px;
+    font-family: "Source Code Pro", monospace;
+    font-weight: 100;
+}
+
+#about #head-about span {
+    font-weight: 600;
+    font-size: 40px;
+    font-family: "Source Code Pro", monospace;
+}
+#detail-info-left span,
+#detail-info-right span {
+    padding:10px 0 10px 0 ;
+    display: block;
+    margin-bottom: 8px;
+}
+
+#detail-info-left,
+#detail-info-right {
+    margin-top:20px ;
+    width:30%;
+    display: inline-block;
+
+}
+
+#detail-info-left {
+    float: left;
+}
+
+#detail-info-right {
+    float: right;
+}
+
+#info-button-links {
+    clear: both;
+    margin-top: 30px;
+}
