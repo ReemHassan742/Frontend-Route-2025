@@ -69,9 +69,9 @@ console.log(u <= v); // true
 
 // Logical Operators
 let w = true;
-let x = false;
-console.log(w && x); // false
-console.log(w || x); // true
+let xx = false;
+console.log(w && xx); // false
+console.log(w || xx); // true
 console.log(!w); // false
 
 // falsy values
@@ -143,3 +143,85 @@ for (var i = 1900; i <= 2025; i++) {
   numbers += `<Option> ${i} </Option>`;
 }
 document.getElementById("mySelect").innerHTML = numbers;
+
+//functions
+function add(a, b) {
+  return a + b;
+}
+console.log(add(5, 10)); // 15
+
+function subtract(a, b) {
+  return a - b;
+}
+console.log(subtract(10, 5)); // 5
+
+//function expression
+const multiply = function (a, b) {
+  return a * b;
+};
+console.log(multiply(5, 10)); // 50
+//arrow function
+const divide = (a, b) => {
+  return a / b;
+};
+console.log(divide(10, 5)); // 2
+//IIFE
+(function () {
+  console.log("This is an IIFE");
+})();
+//closures
+function outerFunction() {
+  let outerVariable = "I am outside!";
+  function innerFunction() {
+    console.log(outerVariable);
+  }
+  return innerFunction;
+}
+const closure = outerFunction();
+closure(); // "I am outside!"
+//callback
+function callbackFunction() {
+  console.log("This is a callback function");
+}
+function mainFunction(callback) {
+  console.log("This is the main function");
+  callback();
+}
+mainFunction(callbackFunction); // "This is the main function" "This is a callback function"
+//promise
+const myPromise = new Promise((resolve, reject) => {
+  let success = true;
+  if (success) {
+    resolve("Promise resolved!");
+  } else {
+    reject("Promise rejected!");
+  }
+});
+myPromise
+  .then((message) => {
+    console.log(message); // "Promise resolved!"
+  })
+  .catch((error) => {
+    console.log(error);
+  });
+//async await
+async function asyncFunction() {
+  try {
+    const result = await myPromise;
+    console.log(result); // "Promise resolved!"
+  } catch (error) {
+    console.log(error);
+  }
+}
+asyncFunction();
+
+//hoisting is a JavaScript mechanism where variables and function declarations are moved to the top of their containing scope during the compile phase. This means that you can use variables and functions before they are declared in the code.
+//Example of hoisting with variables
+console.log(x); // undefined
+var x = 5;
+console.log(x); // 5
+//Example of hoisting with functions
+function hoistedFunction() {
+  console.log("This function is hoisted!");
+}
+hoistedFunction(); // "This function is hoisted!"
